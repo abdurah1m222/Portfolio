@@ -23,7 +23,9 @@ font-family: 'Poppins', sans-serif;
     --text-color: var(--black);
     /* Light mode */
     --page-bg: var(--white);
-    --text-color: var(--black);
+    /*--text-color: var(--black);*/
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+    --color-grey-4: #454e56;
 
     --title-1: var(--accent);
 
@@ -57,6 +59,12 @@ html, body {
 .container {
     margin: 0 auto;
     padding: 0 15px;
+    max-width: 1200px;
+}
+
+.about-me {
+    margin: 0 auto;
+    padding: 0 30%;
     max-width: 1200px;
 }
 
@@ -287,18 +295,40 @@ html, body {
     text-align: center;
 }
 
+/* Descriptions */
+
+.me-desc {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
 /* Projects */
 
 .projects {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 30px;
+    column-gap: 100px;
     row-gap: 30px;
     justify-content: center;
 }
 
+.scrolling {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--color-grey-4);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .7rem 0;
+    box-shadow: var(--box-shadow-1) ;
+}
+
 .project {
-    max-width: 700px;
+    max-width: 600px;
     background-color: var(--project-card-bg);
     box-shadow: var(--box-shadow);
     border-radius: 10px;
