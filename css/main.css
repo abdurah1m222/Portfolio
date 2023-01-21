@@ -300,7 +300,9 @@ html, body {
 .me-desc {
     text-align: center;
     font-size: 30px;
-    margin-top: 40px;
+    /*margin-top: 40px;*/
+    margin: 40px 30px;
+    color: var(--accent);
 }
 
 /* Projects */
@@ -308,7 +310,7 @@ html, body {
 .projects {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 100px;
+    column-gap: 400px;
     row-gap: 30px;
     justify-content: center;
 }
@@ -328,14 +330,32 @@ html, body {
 }
 
 .project {
-    max-width: 600px;
+    max-width: 400px;
+    display: flex;
+    /*max-height: 750px;*/
     background-color: var(--project-card-bg);
     box-shadow: var(--box-shadow);
     border-radius: 10px;
+    align-items: center;
+}
+
+.project__1 {
+    justify-content: start;
+}
+
+.project__2 {
+    justify-content: end;
+}
+
+.project__3 {
+    justify-content: start;
 }
 
 .project__img {
     border-radius: 10px;
+    padding: 5%;
+    box-shadow: var(--box-shadow);
+    /*margin: 40px;*/
 }
 
 .project__title {
